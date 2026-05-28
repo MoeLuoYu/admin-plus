@@ -16,7 +16,7 @@ msgstr ""
 "Language-Team: MoeLuoYu <https://github.com/MoeLuoYu>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: includes/class-admin-settings.php:81, includes/class-admin-settings.php:344
+#: includes/class-admin-settings.php:81, includes/class-admin-settings.php:341
 msgid "Admin Plus 设置"
 msgstr ""
 
@@ -28,243 +28,223 @@ msgstr ""
 msgid "设置"
 msgstr ""
 
-#: includes/class-admin-settings.php:349
+#: includes/class-admin-settings.php:346
 msgid "登录页面"
 msgstr ""
 
-#: includes/class-admin-settings.php:352
+#: includes/class-admin-settings.php:349
 msgid "后台样式"
 msgstr ""
 
-#: includes/class-admin-settings.php:355
+#: includes/class-admin-settings.php:352
 msgid "颜色方案"
 msgstr ""
 
-#: includes/class-admin-settings.php:358
+#: includes/class-admin-settings.php:355
 msgid "自定义代码"
 msgstr ""
 
-#: includes/class-admin-settings.php:411
+#: includes/class-admin-settings.php:408
 msgid "登录页面Logo"
 msgstr ""
 
-#: includes/class-admin-settings.php:418, includes/class-admin-settings.php:460
+#: includes/class-admin-settings.php:415, includes/class-admin-settings.php:457
 msgid "选择图片"
 msgstr ""
 
-#: includes/class-admin-settings.php:421, includes/class-admin-settings.php:463
+#: includes/class-admin-settings.php:418, includes/class-admin-settings.php:460
 msgid "移除"
 msgstr ""
 
-#: includes/class-admin-settings.php:424
+#: includes/class-admin-settings.php:421
 msgid "建议尺寸：宽度不超过300px的正方形或横向图片。留空则显示默认WordPress Logo。"
 msgstr ""
 
-#: includes/class-admin-settings.php:434
+#: includes/class-admin-settings.php:431
 msgid "Logo宽度(px)"
 msgstr ""
 
-#: includes/class-admin-settings.php:439
+#: includes/class-admin-settings.php:436
 msgid "设置Logo在登录页面的显示宽度（100-600px）"
 msgstr ""
 
-#: includes/class-admin-settings.php:444
+#: includes/class-admin-settings.php:441
 msgid "登录页背景颜色"
 msgstr ""
 
-#: includes/class-admin-settings.php:453
+#: includes/class-admin-settings.php:450
 msgid "登录页背景图片"
 msgstr ""
 
-#: includes/class-admin-settings.php:466
+#: includes/class-admin-settings.php:463
 msgid "建议使用1920x1080或更大尺寸的图片作为背景。背景颜色将在图片未加载时显示。"
 msgstr ""
 
-#: includes/class-admin-settings.php:471
+#: includes/class-admin-settings.php:468
 msgid "登录表单样式"
 msgstr ""
 
-#: includes/class-admin-settings.php:475
+#: includes/class-admin-settings.php:472
 msgid "现代简洁"
 msgstr ""
 
-#: includes/class-admin-settings.php:476
+#: includes/class-admin-settings.php:473
 msgid "经典风格"
 msgstr ""
 
-#: includes/class-admin-settings.php:477
+#: includes/class-admin-settings.php:474
 msgid "毛玻璃效果（AI风格）"
 msgstr ""
 
-#: includes/class-admin-settings.php:503
+#: includes/class-admin-settings.php:500
 msgid "后台布局"
 msgstr ""
 
-#: includes/class-admin-settings.php:507
+#: includes/class-admin-settings.php:504
 msgid "默认布局（WordPress原生）"
 msgstr ""
 
-#: includes/class-admin-settings.php:508
+#: includes/class-admin-settings.php:505
 msgid "Discuz风格布局"
 msgstr ""
 
-#: includes/class-admin-settings.php:510
+#: includes/class-admin-settings.php:507
 msgid "Discuz风格：主菜单在顶部，子菜单在左侧，支持横向滚动和悬停延迟切换。"
 msgstr ""
 
-#: includes/class-admin-settings.php:515
+#: includes/class-admin-settings.php:512
 msgid "后台字体"
 msgstr ""
 
-#: includes/class-admin-settings.php:519
+#: includes/class-admin-settings.php:516
 msgid "系统默认"
 msgstr ""
 
-#: includes/class-admin-settings.php:520
-msgid "系统UI字体"
-msgstr ""
-
-#: includes/class-admin-settings.php:521
-msgid "苹果字体"
-msgstr ""
-
-#: includes/class-admin-settings.php:522
-msgid "Segoe UI"
-msgstr ""
-
-#: includes/class-admin-settings.php:523
-msgid "中文字体"
-msgstr ""
-
 #: includes/class-admin-settings.php:524
-msgid "Inter"
-msgstr ""
-
-#: includes/class-admin-settings.php:530
 msgid "后台页脚文字"
 msgstr ""
 
-#: includes/class-admin-settings.php:534
+#: includes/class-admin-settings.php:528
 msgid "自定义后台页面底部显示的文字，支持HTML标签。留空则显示默认信息。"
 msgstr ""
 
-#: includes/class-admin-settings.php:539
+#: includes/class-admin-settings.php:533
 msgid "顶部工具栏Logo"
 msgstr ""
 
-#: includes/class-admin-settings.php:545
+#: includes/class-admin-settings.php:539
 msgid "移除顶部工具栏中的WordPress Logo"
 msgstr ""
 
-#: includes/class-admin-settings.php:551
+#: includes/class-admin-settings.php:545
 msgid "Gravatar镜像源"
 msgstr ""
 
-#: includes/class-admin-settings.php:555
+#: includes/class-admin-settings.php:549
 msgid "默认（Gravatar官方）"
 msgstr ""
 
-#: includes/class-admin-settings.php:556
+#: includes/class-admin-settings.php:550
 msgid "Cravatar（推荐国内使用）"
 msgstr ""
 
-#: includes/class-admin-settings.php:559
+#: includes/class-admin-settings.php:553
 msgid "Gravatar官方（gravatar.com）"
 msgstr ""
 
-#: includes/class-admin-settings.php:560, includes/class-color-schemes.php:90
+#: includes/class-admin-settings.php:554, includes/class-color-schemes.php:90
 msgid "自定义"
 msgstr ""
 
-#: includes/class-admin-settings.php:567
+#: includes/class-admin-settings.php:561
 msgid "输入自定义镜像域名（含路径），如 example.com/avatar。将替换 Gravatar URL 中的域名部分。"
 msgstr ""
 
-#: includes/class-admin-settings.php:569
+#: includes/class-admin-settings.php:563
 msgid "在中国大陆访问 Gravatar 可能较慢或无法加载，选择镜像源可加速头像显示。"
 msgstr ""
 
-#: includes/class-admin-settings.php:598
+#: includes/class-admin-settings.php:592
 msgid "后台颜色方案"
 msgstr ""
 
-#: includes/class-admin-settings.php:608
+#: includes/class-admin-settings.php:602
 msgid "选择后台颜色方案，覆盖默认的WordPress后台颜色。选择\"默认\"即使用WordPress原生颜色。"
 msgstr ""
 
-#: includes/class-admin-settings.php:668
+#: includes/class-admin-settings.php:662
 msgid "颜色预览"
 msgstr ""
 
-#: includes/class-admin-settings.php:616
+#: includes/class-admin-settings.php:610
 msgid "自定义颜色设置"
 msgstr ""
 
-#: includes/class-admin-settings.php:620, includes/class-color-schemes.php:92, includes/class-color-schemes.php:102, includes/class-color-schemes.php:112, includes/class-color-schemes.php:122, includes/class-color-schemes.php:132, includes/class-color-schemes.php:142, includes/class-color-schemes.php:152, includes/class-color-schemes.php:162, includes/class-color-schemes.php:172, includes/class-color-schemes.php:182
+#: includes/class-admin-settings.php:614, includes/class-color-schemes.php:92, includes/class-color-schemes.php:102, includes/class-color-schemes.php:112, includes/class-color-schemes.php:122, includes/class-color-schemes.php:132, includes/class-color-schemes.php:142, includes/class-color-schemes.php:152, includes/class-color-schemes.php:162, includes/class-color-schemes.php:172, includes/class-color-schemes.php:182
 msgid "主色调"
 msgstr ""
 
-#: includes/class-admin-settings.php:629, includes/class-color-schemes.php:93, includes/class-color-schemes.php:103, includes/class-color-schemes.php:113, includes/class-color-schemes.php:123, includes/class-color-schemes.php:133, includes/class-color-schemes.php:143, includes/class-color-schemes.php:153, includes/class-color-schemes.php:163, includes/class-color-schemes.php:173, includes/class-color-schemes.php:183
+#: includes/class-admin-settings.php:623, includes/class-color-schemes.php:93, includes/class-color-schemes.php:103, includes/class-color-schemes.php:113, includes/class-color-schemes.php:123, includes/class-color-schemes.php:133, includes/class-color-schemes.php:143, includes/class-color-schemes.php:153, includes/class-color-schemes.php:163, includes/class-color-schemes.php:173, includes/class-color-schemes.php:183
 msgid "菜单背景"
 msgstr ""
 
-#: includes/class-admin-settings.php:638, includes/class-color-schemes.php:94, includes/class-color-schemes.php:104, includes/class-color-schemes.php:114, includes/class-color-schemes.php:124, includes/class-color-schemes.php:134, includes/class-color-schemes.php:144, includes/class-color-schemes.php:154, includes/class-color-schemes.php:164, includes/class-color-schemes.php:174, includes/class-color-schemes.php:184
+#: includes/class-admin-settings.php:632, includes/class-color-schemes.php:94, includes/class-color-schemes.php:104, includes/class-color-schemes.php:114, includes/class-color-schemes.php:124, includes/class-color-schemes.php:134, includes/class-color-schemes.php:144, includes/class-color-schemes.php:154, includes/class-color-schemes.php:164, includes/class-color-schemes.php:174, includes/class-color-schemes.php:184
 msgid "高亮色"
 msgstr ""
 
-#: includes/class-admin-settings.php:647, includes/class-color-schemes.php:95, includes/class-color-schemes.php:105, includes/class-color-schemes.php:115, includes/class-color-schemes.php:125, includes/class-color-schemes.php:135, includes/class-color-schemes.php:145, includes/class-color-schemes.php:155, includes/class-color-schemes.php:165, includes/class-color-schemes.php:175, includes/class-color-schemes.php:185
+#: includes/class-admin-settings.php:641, includes/class-color-schemes.php:95, includes/class-color-schemes.php:105, includes/class-color-schemes.php:115, includes/class-color-schemes.php:125, includes/class-color-schemes.php:135, includes/class-color-schemes.php:145, includes/class-color-schemes.php:155, includes/class-color-schemes.php:165, includes/class-color-schemes.php:175, includes/class-color-schemes.php:185
 msgid "链接色"
 msgstr ""
 
-#: includes/class-admin-settings.php:656, includes/class-color-schemes.php:96, includes/class-color-schemes.php:106, includes/class-color-schemes.php:116, includes/class-color-schemes.php:126, includes/class-color-schemes.php:136, includes/class-color-schemes.php:146, includes/class-color-schemes.php:156, includes/class-color-schemes.php:166, includes/class-color-schemes.php:176, includes/class-color-schemes.php:186
+#: includes/class-admin-settings.php:650, includes/class-color-schemes.php:96, includes/class-color-schemes.php:106, includes/class-color-schemes.php:116, includes/class-color-schemes.php:126, includes/class-color-schemes.php:136, includes/class-color-schemes.php:146, includes/class-color-schemes.php:156, includes/class-color-schemes.php:166, includes/class-color-schemes.php:176, includes/class-color-schemes.php:186
 msgid "按钮色"
 msgstr ""
 
-#: includes/class-admin-settings.php:698
+#: includes/class-admin-settings.php:692
 msgid "登录页面自定义CSS"
 msgstr ""
 
-#: includes/class-admin-settings.php:703
+#: includes/class-admin-settings.php:697
 msgid "仅作用于登录页面（wp-login.php）的自定义CSS。<strong>不需要</strong>添加 &lt;style&gt; 标签。"
 msgstr ""
 
-#: includes/class-admin-settings.php:709
+#: includes/class-admin-settings.php:703
 msgid "后台管理自定义CSS"
 msgstr ""
 
-#: includes/class-admin-settings.php:714
+#: includes/class-admin-settings.php:708
 msgid "仅作用于WordPress管理后台的自定义CSS。<strong>不需要</strong>添加 &lt;style&gt; 标签。"
 msgstr ""
 
-#: includes/class-admin-settings.php:722
+#: includes/class-admin-settings.php:716
 msgid "常用CSS示例"
 msgstr ""
 
-#: includes/class-admin-settings.php:723
+#: includes/class-admin-settings.php:717
 msgid "登录页面示例："
 msgstr ""
 
-#: includes/class-admin-settings.php:733
+#: includes/class-admin-settings.php:727
 msgid "后台管理示例："
 msgstr ""
 
-#: includes/class-admin-styles.php:496
+#: includes/class-admin-styles.php:554
 msgid "感谢使用 <a href=\"%s\">WordPress</a>"
 msgstr ""
 
-#: includes/class-admin-styles.php:499
+#: includes/class-admin-styles.php:557
 msgid "由 <a href=\"%s\">Admin Plus</a> 美化加速"
 msgstr ""
 
-#: includes/class-admin-styles.php:517
+#: includes/class-admin-styles.php:575
 msgid "版本"
 msgstr ""
 
-#: includes/class-admin-styles.php:650
+#: includes/class-admin-styles.php:711
 msgid "向左滚动"
 msgstr ""
 
-#: includes/class-admin-styles.php:671
+#: includes/class-admin-styles.php:732
 msgid "向右滚动"
 msgstr ""
 

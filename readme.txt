@@ -24,7 +24,7 @@ Admin Plus 是一款功能丰富的 WordPress 后台美化插件，让您无需�
 **后台样式管理**
 
 * Discuz 风格布局 — 顶部固定水平主菜单 + 左侧子菜单侧边栏，支持鼠标悬停切换、横向滚动、完整的移动端响应式适配
-* 字体选择 — 内置 6 种字体方案（系统默认、系统UI、苹果字体、Segoe UI、中文字体、Inter）
+* 字体选择 — 内置 HarmonyOS Sans、Noto Sans SC 等 Web 字体方案，通过 CDN 加载
 * 页脚自定义 — 自定义后台页脚文字，支持 HTML 标签
 * 工具栏控制 — 可移除顶部工具栏中的 WordPress Logo
 * Gravatar 镜像 — 内置多个 Gravatar 镜像源（Cravatar、LOLI.net、V2EX 等），支持自定义镜像，解决中国大陆地区头像加载问题

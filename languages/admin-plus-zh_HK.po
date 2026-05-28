@@ -92,21 +92,6 @@ msgstr "後台字體"
 msgid "系统默认"
 msgstr "系統預設"
 
-msgid "系统UI字体"
-msgstr "系統UI字體"
-
-msgid "苹果字体"
-msgstr "蘋果字體"
-
-msgid "Segoe UI"
-msgstr "Segoe UI"
-
-msgid "中文字体"
-msgstr "中文字體"
-
-msgid "Inter"
-msgstr "Inter"
-
 msgid "后台页脚文字"
 msgstr "後台頁尾文字"
 

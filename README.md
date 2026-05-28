@@ -16,7 +16,7 @@
 ### 🖥️ 后台样式管理
 
 - **布局模式** — 支持 WordPress 原生布局和 Discuz 风格横向菜单布局
-- **字体选择** — 内置 6 种字体方案（系统默认、系统UI、苹果字体、Segoe UI、中文字体、Inter）
+- **字体选择** — 内置 HarmonyOS Sans、Noto Sans SC 等 Web 字体方案，通过 CDN 加载
 - **页脚自定义** — 自定义后台页脚文字，支持 HTML 标签
 - **工具栏控制** — 可移除顶部工具栏中的 WordPress Logo
 
