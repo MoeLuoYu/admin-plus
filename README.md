@@ -98,8 +98,8 @@ GPL v2 or later — 详见 [LICENSE](https://www.gnu.org/licenses/gpl-2.0.html)
 
 ## 联系方式
 
-**MoeLuoYu** — [GitHub](https://github.com/MoeLuoYu)
-如果在使用过程中遇到任何问题或有任何建议，欢迎联系插件开发者：
+- **MoeLuoYu** — [GitHub](https://github.com/MoeLuoYu)
+- 如果在使用过程中遇到任何问题或有任何建议，欢迎联系插件开发者：
 - **QQ**：1498640871
 
 ## 贡献代码
@@ -112,6 +112,6 @@ GPL v2 or later — 详见 [LICENSE](https://www.gnu.org/licenses/gpl-2.0.html)
 
 ## 支持与捐赠
 
-如果您觉得本程序做的不错，您可以捐赠支持我！
-**捐赠地址：https://afdian.net/@MoeLuoYu**
-感谢您对开源项目的支持！
+- 如果您觉得本程序做的不错，您可以捐赠支持我！
+- **捐赠地址：https://afdian.net/@MoeLuoYu**
+- 感谢您对开源项目的支持！
