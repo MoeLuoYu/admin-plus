@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/MoeLuoYu/admin-plus
  * Description: 一款强大的WordPress后台美化插件，支持自定义登录页面、管理后台样式、颜色方案等多种美化功能。
  * Version: 1.0.0
- * Requires at least: 5.0
+ * Requires at least: 6.8
  * Requires PHP: 7.4
  * Author: MoeLuoYu
  * Author URI: https://github.com/MoeLuoYu
@@ -30,6 +30,7 @@ require_once AP_PLUGIN_DIR . 'includes/class-admin-settings.php';
 require_once AP_PLUGIN_DIR . 'includes/class-login-customizer.php';
 require_once AP_PLUGIN_DIR . 'includes/class-admin-styles.php';
 require_once AP_PLUGIN_DIR . 'includes/class-color-schemes.php';
+require_once AP_PLUGIN_DIR . 'includes/class-gravatar-mirror.php';
 
 /**
  * Admin Plus 主类
@@ -112,6 +113,8 @@ class Admin_Plus {
             'custom_highlight' => '#7b90ff', // 自定义颜色 - 高亮色
             'custom_link' => '#3858e9',      // 自定义颜色 - 链接色
             'custom_button' => '#3858e9',    // 自定义颜色 - 按钮色
+            'gravatar_mirror' => '',          // Gravatar镜像源，留空使用默认
+            'gravatar_mirror_custom' => '',   // Gravatar自定义镜像域名
         );
 
         $existing = get_option('ap_settings');
@@ -163,6 +166,7 @@ class Admin_Plus {
         Login_Customizer::get_instance();
         Admin_Styles::get_instance();
         Color_Schemes::get_instance();
+        Gravatar_Mirror::get_instance();
     }
 }
 

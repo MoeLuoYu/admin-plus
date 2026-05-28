@@ -65,6 +65,18 @@
                 $('#submit').trigger('click');
             });
         }
+
+        var gravatarSelect = $('.ap-gravatar-mirror-select');
+        if (gravatarSelect.length) {
+            gravatarSelect.on('change', function() {
+                var customWrap = $(this).closest('td').find('.ap-gravatar-custom-wrap');
+                if ($(this).val() === 'custom') {
+                    customWrap.show();
+                } else {
+                    customWrap.hide();
+                }
+            });
+        }
     });
 
 })(jQuery);

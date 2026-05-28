@@ -1,9 +1,10 @@
 === Admin Plus ===
 Contributors: MoeLuoYu
-Tags: admin, customize, login, color-scheme, dashboard, beautify, styles, discuz
-Requires at least: 5.0
-Tested up to: 6.8
-Stable tag: 1.0.2
+Tags: admin, login, color-scheme, styles, discuz
+Donate link: https://afdian.com/a/MoeLuoYu
+Requires at least: 6.8
+Tested up to: 7.0
+Stable tag: 1.0.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -26,6 +27,7 @@ Admin Plus 是一款功能丰富的 WordPress 后台美化插件，让您无需�
 * 字体选择 — 内置 6 种字体方案（系统默认、系统UI、苹果字体、Segoe UI、中文字体、Inter）
 * 页脚自定义 — 自定义后台页脚文字，支持 HTML 标签
 * 工具栏控制 — 可移除顶部工具栏中的 WordPress Logo
+* Gravatar 镜像 — 内置多个 Gravatar 镜像源（Cravatar、LOLI.net、V2EX 等），支持自定义镜像，解决中国大陆地区头像加载问题
 
 **颜色方案**
 
@@ -72,6 +74,7 @@ Admin Plus 是一款功能丰富的 WordPress 后台美化插件，让您无需�
 * 支持移除顶部工具栏 WordPress Logo
 * 支持 Discuz 风格横向菜单布局
 * 支持后台字体更改
+* 支持 Gravatar 镜像源设置
 
 == Upgrade Notice ==
 = 1.0.0 =

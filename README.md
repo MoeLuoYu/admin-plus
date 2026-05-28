@@ -54,11 +54,20 @@
 - 菜单项超出宽度时自动显示滚动按钮，支持鼠标滚轮横向滚动
 - 完整的移动端响应式适配
 
+### 🌐 Gravatar 镜像源
+
+- **默认** — WordPress 原生 Gravatar 镜像源
+- **cravatar.cn** — 中国 Gravatar 镜像源，支持中文用户
+- **gravatar.loli.net** — 中国 Gravatar 镜像源，支持中文用户
+- **cdn.v2ex.com/gravatar** — 中国 Gravatar 镜像源，支持中文用户
+- **gravatar.com** — 国际 Gravatar 镜像源，支持英文用户
+- **自定义** — 用户自定义 Gravatar 镜像域名，支持自定义域名
+
 ## 系统要求
 
 | 项目 | 最低版本 |
 |------|---------|
-| WordPress | 5.0+ |
+| WordPress | 6.8+ |
 | PHP | 7.4+ |
 
 ## 项目结构
@@ -87,6 +96,22 @@ admin-plus/
 
 GPL v2 or later — 详见 [LICENSE](https://www.gnu.org/licenses/gpl-2.0.html)
 
-## 作者
+## 联系方式
 
 **MoeLuoYu** — [GitHub](https://github.com/MoeLuoYu)
+如果在使用过程中遇到任何问题或有任何建议，欢迎联系插件开发者：
+- **QQ**：1498640871
+
+## 贡献代码
+
+欢迎开发者为该插件贡献代码。如果你有好的想法或改进方案，请提交 Pull Request，我们会认真审核并合并优秀的贡献。
+
+## 问题反馈与支持
+
+如果你在使用过程中遇到任何问题或有改进建议，请提交 Issues，我们将尽快处理。
+
+## 支持与捐赠
+
+如果您觉得本程序做的不错，您可以捐赠支持我！
+**捐赠地址：https://afdian.net/@MoeLuoYu**
+感谢您对开源项目的支持！

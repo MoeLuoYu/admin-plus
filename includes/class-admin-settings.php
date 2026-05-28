@@ -195,6 +195,13 @@ class Admin_Settings {
             $sanitized['custom_button'] = $this->sanitize_hex_color_safe($input['custom_button']);
         }
 
+        if (isset($input['gravatar_mirror'])) {
+            $sanitized['gravatar_mirror'] = $this->sanitize_gravatar_mirror($input['gravatar_mirror']);
+        }
+        if (isset($input['gravatar_mirror_custom'])) {
+            $sanitized['gravatar_mirror_custom'] = $this->sanitize_gravatar_mirror_custom($input['gravatar_mirror_custom']);
+        }
+
         return $sanitized;
     }
 
@@ -254,6 +261,31 @@ class Admin_Settings {
         );
         if (in_array($font_family, $allowed, true)) {
             return $font_family;
+        }
+        return '';
+    }
+
+    private function sanitize_gravatar_mirror($mirror) {
+        $allowed = array(
+            '',
+            'cravatar.cn',
+            'gravatar.loli.net',
+            'cdn.v2ex.com/gravatar',
+            'gravatar.com',
+            'custom',
+        );
+        return in_array($mirror, $allowed, true) ? $mirror : '';
+    }
+
+    private function sanitize_gravatar_mirror_custom($host) {
+        if (empty($host)) {
+            return '';
+        }
+        $host = sanitize_text_field($host);
+        $host = preg_replace('#^https?://#i', '', $host);
+        $host = preg_replace('#/+$#', '', $host);
+        if (preg_match('#^[a-zA-Z0-9]([a-zA-Z0-9\-\.]*[a-zA-Z0-9])?(/[^/]+)*$#', $host)) {
+            return $host;
         }
         return '';
     }
@@ -511,6 +543,29 @@ class Admin_Settings {
                                value="1" <?php checked($remove_logo, 1); ?> />
                         <?php _e('移除顶部工具栏中的WordPress Logo', 'admin-plus'); ?>
                     </label>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <label for="gravatar_mirror"><?php _e('Gravatar镜像源', 'admin-plus'); ?></label>
+                </th>
+                <td>
+                    <select id="gravatar_mirror" name="ap_settings[gravatar_mirror]" class="ap-gravatar-mirror-select">
+                        <option value="" <?php selected($this->get_setting('gravatar_mirror'), ''); ?>><?php _e('默认（Gravatar官方）', 'admin-plus'); ?></option>
+                        <option value="cravatar.cn" <?php selected($this->get_setting('gravatar_mirror'), 'cravatar.cn'); ?>><?php _e('Cravatar（推荐国内使用）', 'admin-plus'); ?></option>
+                        <option value="gravatar.loli.net" <?php selected($this->get_setting('gravatar_mirror'), 'gravatar.loli.net'); ?>>LOLI.net</option>
+                        <option value="cdn.v2ex.com/gravatar" <?php selected($this->get_setting('gravatar_mirror'), 'cdn.v2ex.com/gravatar'); ?>>V2EX</option>
+                        <option value="gravatar.com" <?php selected($this->get_setting('gravatar_mirror'), 'gravatar.com'); ?>><?php _e('Gravatar官方（gravatar.com）', 'admin-plus'); ?></option>
+                        <option value="custom" <?php selected($this->get_setting('gravatar_mirror'), 'custom'); ?>><?php _e('自定义', 'admin-plus'); ?></option>
+                    </select>
+                    <div class="ap-gravatar-custom-wrap" <?php if ($this->get_setting('gravatar_mirror') !== 'custom') echo 'style="display:none;"'; ?>>
+                        <p></p>
+                        <input type="text" id="gravatar_mirror_custom" name="ap_settings[gravatar_mirror_custom]"
+                               value="<?php echo esc_attr($this->get_setting('gravatar_mirror_custom')); ?>"
+                               class="regular-text" placeholder="example.com/avatar" />
+                        <p class="description"><?php _e('输入自定义镜像域名（含路径），如 example.com/avatar。将替换 Gravatar URL 中的域名部分。', 'admin-plus'); ?></p>
+                    </div>
+                    <p class="description"><?php _e('在中国大陆访问 Gravatar 可能较慢或无法加载，选择镜像源可加速头像显示。', 'admin-plus'); ?></p>
                 </td>
             </tr>
         </table>
