@@ -1,0 +1,234 @@
+# Translation of Admin Plus in English
+# This file is distributed under the same license as the Admin Plus package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Admin Plus 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/MoeLuoYu/admin-plus/issues\n"
+"POT-Creation-Date: 2026-05-28 00:00+0800\n"
+"PO-Revision-Date: 2026-05-28 00:00+0800\n"
+"Last-Translator: MoeLuoYu <https://github.com/MoeLuoYu>\n"
+"Language-Team: MoeLuoYu <https://github.com/MoeLuoYu>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Admin Plus 设置"
+msgstr "Admin Plus Settings"
+
+msgid "Admin Plus"
+msgstr "Admin Plus"
+
+msgid "设置"
+msgstr "Settings"
+
+msgid "登录页面"
+msgstr "Login Page"
+
+msgid "后台样式"
+msgstr "Admin Styles"
+
+msgid "颜色方案"
+msgstr "Color Scheme"
+
+msgid "自定义代码"
+msgstr "Custom Code"
+
+msgid "登录页面Logo"
+msgstr "Login Page Logo"
+
+msgid "选择图片"
+msgstr "Select Image"
+
+msgid "移除"
+msgstr "Remove"
+
+msgid "建议尺寸：宽度不超过300px的正方形或横向图片。留空则显示默认WordPress Logo。"
+msgstr "Recommended size: square or landscape image no wider than 300px. Leave empty to use the default WordPress logo."
+
+msgid "Logo宽度(px)"
+msgstr "Logo Width (px)"
+
+msgid "设置Logo在登录页面的显示宽度（100-600px）"
+msgstr "Set the logo display width on the login page (100-600px)"
+
+msgid "登录页背景颜色"
+msgstr "Login Page Background Color"
+
+msgid "登录页背景图片"
+msgstr "Login Page Background Image"
+
+msgid "建议使用1920x1080或更大尺寸的图片作为背景。背景颜色将在图片未加载时显示。"
+msgstr "Recommended to use 1920x1080 or larger images as background. The background color will be displayed while the image is loading."
+
+msgid "登录表单样式"
+msgstr "Login Form Style"
+
+msgid "现代简洁"
+msgstr "Modern"
+
+msgid "经典风格"
+msgstr "Classic"
+
+msgid "毛玻璃效果（AI风格）"
+msgstr "Glassmorphism (AI Style)"
+
+msgid "后台布局"
+msgstr "Admin Layout"
+
+msgid "默认布局（WordPress原生）"
+msgstr "Default (WordPress Native)"
+
+msgid "Discuz风格布局"
+msgstr "Discuz Style Layout"
+
+msgid "Discuz风格：主菜单在顶部，子菜单在左侧，支持横向滚动和悬停延迟切换。"
+msgstr "Discuz style: main menu at the top, submenu on the left, with horizontal scrolling and hover-delay switching."
+
+msgid "后台字体"
+msgstr "Admin Font"
+
+msgid "系统默认"
+msgstr "System Default"
+
+msgid "系统UI字体"
+msgstr "System UI Font"
+
+msgid "苹果字体"
+msgstr "Apple Font"
+
+msgid "Segoe UI"
+msgstr "Segoe UI"
+
+msgid "中文字体"
+msgstr "Chinese Font"
+
+msgid "Inter"
+msgstr "Inter"
+
+msgid "后台页脚文字"
+msgstr "Admin Footer Text"
+
+msgid "自定义后台页面底部显示的文字，支持HTML标签。留空则显示默认信息。"
+msgstr "Customize the text displayed at the bottom of admin pages. HTML tags are supported. Leave empty for default."
+
+msgid "顶部工具栏Logo"
+msgstr "Toolbar Logo"
+
+msgid "移除顶部工具栏中的WordPress Logo"
+msgstr "Remove the WordPress logo from the toolbar"
+
+msgid "Gravatar镜像源"
+msgstr "Gravatar Mirror"
+
+msgid "默认（Gravatar官方）"
+msgstr "Default (Gravatar Official)"
+
+msgid "Cravatar（推荐国内使用）"
+msgstr "Cravatar (Recommended for China)"
+
+msgid "Gravatar官方（gravatar.com）"
+msgstr "Gravatar Official (gravatar.com)"
+
+msgid "自定义"
+msgstr "Custom"
+
+msgid "输入自定义镜像域名（含路径），如 example.com/avatar。将替换 Gravatar URL 中的域名部分。"
+msgstr "Enter a custom mirror domain (with path), e.g. example.com/avatar. This will replace the domain portion of Gravatar URLs."
+
+msgid "在中国大陆访问 Gravatar 可能较慢或无法加载，选择镜像源可加速头像显示。"
+msgstr "Accessing Gravatar from mainland China may be slow or unavailable. Select a mirror source to speed up avatar loading."
+
+msgid "后台颜色方案"
+msgstr "Admin Color Scheme"
+
+msgid "选择后台颜色方案，覆盖默认的WordPress后台颜色。选择\"默认\"即使用WordPress原生颜色。"
+msgstr "Select an admin color scheme to override the default WordPress admin colors. Choose \"Default\" to use native WordPress colors."
+
+msgid "颜色预览"
+msgstr "Color Preview"
+
+msgid "自定义颜色设置"
+msgstr "Custom Color Settings"
+
+msgid "主色调"
+msgstr "Primary"
+
+msgid "菜单背景"
+msgstr "Menu Background"
+
+msgid "高亮色"
+msgstr "Highlight"
+
+msgid "链接色"
+msgstr "Link"
+
+msgid "按钮色"
+msgstr "Button"
+
+msgid "登录页面自定义CSS"
+msgstr "Login Page Custom CSS"
+
+msgid "仅作用于登录页面（wp-login.php）的自定义CSS。<strong>不需要</strong>添加 &lt;style&gt; 标签。"
+msgstr "Custom CSS that only applies to the login page (wp-login.php). <strong>No need</strong> to add &lt;style&gt; tags."
+
+msgid "后台管理自定义CSS"
+msgstr "Admin Custom CSS"
+
+msgid "仅作用于WordPress管理后台的自定义CSS。<strong>不需要</strong>添加 &lt;style&gt; 标签。"
+msgstr "Custom CSS that only applies to the WordPress admin area. <strong>No need</strong> to add &lt;style&gt; tags."
+
+msgid "常用CSS示例"
+msgstr "Common CSS Examples"
+
+msgid "登录页面示例："
+msgstr "Login page examples:"
+
+msgid "后台管理示例："
+msgstr "Admin area examples:"
+
+msgid "感谢使用 <a href=\"%s\">WordPress</a>"
+msgstr "Thank you for using <a href=\"%s\">WordPress</a>"
+
+msgid "由 <a href=\"%s\">Admin Plus</a> 美化加速"
+msgstr "Styled by <a href=\"%s\">Admin Plus</a>"
+
+msgid "版本"
+msgstr "Version"
+
+msgid "向左滚动"
+msgstr "Scroll left"
+
+msgid "向右滚动"
+msgstr "Scroll right"
+
+msgid "默认（无变化）"
+msgstr "Default (No Change)"
+
+msgid "Modern (WordPress 7.0)"
+msgstr "Modern (WordPress 7.0)"
+
+msgid "Fresh (经典)"
+msgstr "Fresh (Classic)"
+
+msgid "Ocean"
+msgstr "Ocean"
+
+msgid "Sunrise"
+msgstr "Sunrise"
+
+msgid "Midnight"
+msgstr "Midnight"
+
+msgid "Coffee"
+msgstr "Coffee"
+
+msgid "Light"
+msgstr "Light"
+
+msgid "Ectoplasm"
+msgstr "Ectoplasm"
+
+msgid "Blue"
+msgstr "Blue"

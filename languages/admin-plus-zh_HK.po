@@ -1,0 +1,234 @@
+# Translation of Admin Plus in Traditional Chinese (Hong Kong)
+# This file is distributed under the same license as the Admin Plus package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Admin Plus 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/MoeLuoYu/admin-plus/issues\n"
+"POT-Creation-Date: 2026-05-28 00:00+0800\n"
+"PO-Revision-Date: 2026-05-28 00:00+0800\n"
+"Last-Translator: MoeLuoYu <https://github.com/MoeLuoYu>\n"
+"Language-Team: MoeLuoYu <https://github.com/MoeLuoYu>\n"
+"Language: zh_HK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Admin Plus 设置"
+msgstr "Admin Plus 設定"
+
+msgid "Admin Plus"
+msgstr "Admin Plus"
+
+msgid "设置"
+msgstr "設定"
+
+msgid "登录页面"
+msgstr "登入頁面"
+
+msgid "后台样式"
+msgstr "後台樣式"
+
+msgid "颜色方案"
+msgstr "顏色方案"
+
+msgid "自定义代码"
+msgstr "自訂程式碼"
+
+msgid "登录页面Logo"
+msgstr "登入頁面Logo"
+
+msgid "选择图片"
+msgstr "選擇圖片"
+
+msgid "移除"
+msgstr "移除"
+
+msgid "建议尺寸：宽度不超过300px的正方形或横向图片。留空则显示默认WordPress Logo。"
+msgstr "建議尺寸：寬度不超過300px的正方形或橫向圖片。留空則顯示預設WordPress Logo。"
+
+msgid "Logo宽度(px)"
+msgstr "Logo寬度(px)"
+
+msgid "设置Logo在登录页面的显示宽度（100-600px）"
+msgstr "設定Logo在登入頁面的顯示寬度（100-600px）"
+
+msgid "登录页背景颜色"
+msgstr "登入頁背景顏色"
+
+msgid "登录页背景图片"
+msgstr "登入頁背景圖片"
+
+msgid "建议使用1920x1080或更大尺寸的图片作为背景。背景颜色将在图片未加载时显示。"
+msgstr "建議使用1920x1080或更大尺寸的圖片作為背景。背景顏色將在圖片未載入時顯示。"
+
+msgid "登录表单样式"
+msgstr "登入表單樣式"
+
+msgid "现代简洁"
+msgstr "現代簡潔"
+
+msgid "经典风格"
+msgstr "經典風格"
+
+msgid "毛玻璃效果（AI风格）"
+msgstr "毛玻璃效果（AI風格）"
+
+msgid "后台布局"
+msgstr "後台佈局"
+
+msgid "默认布局（WordPress原生）"
+msgstr "預設佈局（WordPress原生）"
+
+msgid "Discuz风格布局"
+msgstr "Discuz風格佈局"
+
+msgid "Discuz风格：主菜单在顶部，子菜单在左侧，支持横向滚动和悬停延迟切换。"
+msgstr "Discuz風格：主選單在頂部，子選單在左側，支援橫向捲動和懸停延遲切換。"
+
+msgid "后台字体"
+msgstr "後台字體"
+
+msgid "系统默认"
+msgstr "系統預設"
+
+msgid "系统UI字体"
+msgstr "系統UI字體"
+
+msgid "苹果字体"
+msgstr "蘋果字體"
+
+msgid "Segoe UI"
+msgstr "Segoe UI"
+
+msgid "中文字体"
+msgstr "中文字體"
+
+msgid "Inter"
+msgstr "Inter"
+
+msgid "后台页脚文字"
+msgstr "後台頁尾文字"
+
+msgid "自定义后台页面底部显示的文字，支持HTML标签。留空则显示默认信息。"
+msgstr "自訂後台頁面底部顯示的文字，支援HTML標籤。留空則顯示預設資訊。"
+
+msgid "顶部工具栏Logo"
+msgstr "頂部工具列Logo"
+
+msgid "移除顶部工具栏中的WordPress Logo"
+msgstr "移除頂部工具列中的WordPress Logo"
+
+msgid "Gravatar镜像源"
+msgstr "Gravatar鏡像源"
+
+msgid "默认（Gravatar官方）"
+msgstr "預設（Gravatar官方）"
+
+msgid "Cravatar（推荐国内使用）"
+msgstr "Cravatar（推薦內地使用）"
+
+msgid "Gravatar官方（gravatar.com）"
+msgstr "Gravatar官方（gravatar.com）"
+
+msgid "自定义"
+msgstr "自訂"
+
+msgid "输入自定义镜像域名（含路径），如 example.com/avatar。将替换 Gravatar URL 中的域名部分。"
+msgstr "輸入自訂鏡像域名（含路徑），如 example.com/avatar。將替換 Gravatar URL 中的域名部分。"
+
+msgid "在中国大陆访问 Gravatar 可能较慢或无法加载，选择镜像源可加速头像显示。"
+msgstr "在中國內地存取 Gravatar 可能較慢或無法載入，選擇鏡像源可加速頭像顯示。"
+
+msgid "后台颜色方案"
+msgstr "後台顏色方案"
+
+msgid "选择后台颜色方案，覆盖默认的WordPress后台颜色。选择\"默认\"即使用WordPress原生颜色。"
+msgstr "選擇後台顏色方案，覆蓋預設的WordPress後台顏色。選擇「預設」即使用WordPress原生顏色。"
+
+msgid "颜色预览"
+msgstr "顏色預覽"
+
+msgid "自定义颜色设置"
+msgstr "自訂顏色設定"
+
+msgid "主色调"
+msgstr "主色調"
+
+msgid "菜单背景"
+msgstr "選單背景"
+
+msgid "高亮色"
+msgstr "高亮色"
+
+msgid "链接色"
+msgstr "連結色"
+
+msgid "按钮色"
+msgstr "按鈕色"
+
+msgid "登录页面自定义CSS"
+msgstr "登入頁面自訂CSS"
+
+msgid "仅作用于登录页面（wp-login.php）的自定义CSS。<strong>不需要</strong>添加 &lt;style&gt; 标签。"
+msgstr "僅作用於登入頁面（wp-login.php）的自訂CSS。<strong>不需要</strong>新增 &lt;style&gt; 標籤。"
+
+msgid "后台管理自定义CSS"
+msgstr "後台管理自訂CSS"
+
+msgid "仅作用于WordPress管理后台的自定义CSS。<strong>不需要</strong>添加 &lt;style&gt; 标签。"
+msgstr "僅作用於WordPress管理後台的自訂CSS。<strong>不需要</strong>新增 &lt;style&gt; 標籤。"
+
+msgid "常用CSS示例"
+msgstr "常用CSS範例"
+
+msgid "登录页面示例："
+msgstr "登入頁面範例："
+
+msgid "后台管理示例："
+msgstr "後台管理範例："
+
+msgid "感谢使用 <a href=\"%s\">WordPress</a>"
+msgstr "感謝使用 <a href=\"%s\">WordPress</a>"
+
+msgid "由 <a href=\"%s\">Admin Plus</a> 美化加速"
+msgstr "由 <a href=\"%s\">Admin Plus</a> 美化加速"
+
+msgid "版本"
+msgstr "版本"
+
+msgid "向左滚动"
+msgstr "向左捲動"
+
+msgid "向右滚动"
+msgstr "向右捲動"
+
+msgid "默认（无变化）"
+msgstr "預設（無變化）"
+
+msgid "Modern (WordPress 7.0)"
+msgstr "Modern (WordPress 7.0)"
+
+msgid "Fresh (经典)"
+msgstr "Fresh (經典)"
+
+msgid "Ocean"
+msgstr "Ocean"
+
+msgid "Sunrise"
+msgstr "Sunrise"
+
+msgid "Midnight"
+msgstr "Midnight"
+
+msgid "Coffee"
+msgstr "Coffee"
+
+msgid "Light"
+msgstr "Light"
+
+msgid "Ectoplasm"
+msgstr "Ectoplasm"
+
+msgid "Blue"
+msgstr "Blue"
