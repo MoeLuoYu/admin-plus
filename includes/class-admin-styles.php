@@ -514,7 +514,7 @@ class Admin_Styles {
         if ($remove) {
             return '';
         }
-        return '版本 ' . get_bloginfo('version');
+        return __('版本', 'admin-plus') . ' ' . get_bloginfo('version');
     }
 
     /**
@@ -582,7 +582,7 @@ class Admin_Styles {
             // 构建菜单项的URL
             $menu_url = $this->build_menu_url($menu_slug);
             // 判断是否为当前活跃菜单
-            $is_current = ($parent_file === $menu_slug || (!empty($parent_file) && strpos($parent_file, $menu_slug) === 0));
+            $is_current = ($parent_file === $menu_slug);
             
             // 提取菜单项的数字计数（如未读评论数、更新数等）
             $count = $this->extract_menu_count($item[0]);
@@ -647,7 +647,7 @@ class Admin_Styles {
         
         // ===== 输出顶部主菜单HTML =====
         echo '<div class="ap-top-menu" id="ap-top-menu">' . "\n";
-        echo '<button class="ap-top-menu-scroll-left" title="向左滚动">&lt;</button>' . "\n";
+        echo '<button class="ap-top-menu-scroll-left" title="' . esc_attr__('向左滚动', 'admin-plus') . '">&lt;</button>' . "\n";
         echo '<div class="ap-top-menu-inner">' . "\n";
         
         foreach ($menu_items as $item) {
@@ -668,7 +668,7 @@ class Admin_Styles {
         }
         
         echo '</div>' . "\n";
-        echo '<button class="ap-top-menu-scroll-right" title="向右滚动">&gt;</button>' . "\n";
+        echo '<button class="ap-top-menu-scroll-right" title="' . esc_attr__('向右滚动', 'admin-plus') . '">&gt;</button>' . "\n";
         echo '</div>' . "\n";
         
         // ===== 输出左侧子菜单侧边栏HTML =====

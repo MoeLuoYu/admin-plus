@@ -17,9 +17,9 @@
             var preview = button.closest('td').find('.ap-preview');
 
             var frame = wp.media({
-                title: '选择图片',
+                title: wp.i18n.__('选择图片', 'admin-plus'),
                 button: {
-                    text: '使用此图片'
+                    text: wp.i18n.__('使用此图片', 'admin-plus')
                 },
                 multiple: false,
                 library: {

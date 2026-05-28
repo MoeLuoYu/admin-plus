@@ -5,7 +5,7 @@
  * 负责WordPress登录页面（wp-login.php）的视觉自定义，包括：
  * - 自定义Logo图片和链接
  * - 登录页背景颜色和背景图片
- * - 登录表单样式（现代简洁 / 经典风格 / 毛玻璃效果）
+ * - 登录表单样式（现代简洁 / 经典风格 / 毛玻璃效果（AI风格））
  * - 登录页自定义CSS代码输出
  * - 登录页body元素的CSS类名注入
  *
@@ -132,7 +132,7 @@ class Login_Customizer {
      * 3. 表单样式：根据选择的样式类型输出不同的CSS规则
      *    - modern: 圆角卡片式表单，柔和阴影
      *    - classic: 经典直角表单，传统WordPress风格
-     *    - glass: 毛玻璃效果，半透明背景 + 渐变按钮
+     *    - glass: 毛玻璃效果（AI风格），半透明背景 + 渐变按钮
      *
      * 所有输出值均通过 esc_url() 和 esc_attr() 进行安全转义。
      */
@@ -190,7 +190,7 @@ class Login_Customizer {
                     break;
 
                 case 'glass':
-                    // 毛玻璃效果：半透明背景 + 模糊 + 渐变按钮
+                    // 毛玻璃效果（AI风格）：半透明背景 + 模糊 + 渐变按钮
                     ?>
                     body.login #loginform {
                         background: rgba(255, 255, 255, 0.85);

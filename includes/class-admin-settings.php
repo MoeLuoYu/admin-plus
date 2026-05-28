@@ -313,10 +313,11 @@ class Admin_Settings {
         wp_enqueue_script(
             'ap-admin-settings',
             AP_PLUGIN_URL . 'assets/js/admin.js',
-            array('jquery', 'wp-color-picker'),
+            array('jquery', 'wp-color-picker', 'wp-i18n'),
             AP_VERSION,
             true
         );
+        wp_set_script_translations('ap-admin-settings', 'admin-plus', AP_PLUGIN_DIR . 'languages');
         wp_enqueue_style(
             'ap-admin-settings',
             AP_PLUGIN_URL . 'assets/css/admin.css',
@@ -395,7 +396,7 @@ class Admin_Settings {
      * - Logo显示宽度
      * - 登录页背景颜色（颜色选择器）
      * - 登录页背景图片（支持媒体库上传选择）
-     * - 登录表单样式（下拉选择：现代简洁/经典风格/毛玻璃效果）
+     * - 登录表单样式（下拉选择：现代简洁/经典风格/毛玻璃效果（AI风格））
      */
     private function render_login_tab() {
         $logo = $this->get_setting('login_logo');
@@ -473,7 +474,7 @@ class Admin_Settings {
                     <select id="login_form_style" name="ap_settings[login_form_style]">
                         <option value="modern" <?php selected($form_style, 'modern'); ?>><?php _e('现代简洁', 'admin-plus'); ?></option>
                         <option value="classic" <?php selected($form_style, 'classic'); ?>><?php _e('经典风格', 'admin-plus'); ?></option>
-                        <option value="glass" <?php selected($form_style, 'glass'); ?>><?php _e('毛玻璃效果', 'admin-plus'); ?></option>
+                        <option value="glass" <?php selected($form_style, 'glass'); ?>><?php _e('毛玻璃效果（AI风格）', 'admin-plus'); ?></option>
                     </select>
                 </td>
             </tr>
