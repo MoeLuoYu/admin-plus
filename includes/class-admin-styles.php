@@ -93,6 +93,40 @@ class Admin_Styles {
             array(),
             AP_VERSION
         );
+
+        $this->enqueue_font_cdn();
+    }
+
+    private function get_font_registry() {
+        return array(
+            'harmonyos-sans' => array(
+                'cdn'  => 'https://cdn.jsdelivr.net/npm/harmonyos-sans-sc-webfont-splitted@1.1.0/dist/index.min.css',
+                'css'  => "'HarmonyOS Sans SC', sans-serif",
+            ),
+            'noto-sans-sc' => array(
+                'cdn'  => 'https://cdn.jsdelivr.net/npm/noto-sans-sc@37.0.0/noto_sans_sc_medium/css.min.css',
+                'css'  => "'Noto Sans SC', sans-serif",
+            ),
+        );
+    }
+
+    private function enqueue_font_cdn() {
+        $font_key = $this->settings->get_setting('admin_font_family');
+        if (empty($font_key)) {
+            return;
+        }
+
+        $fonts = $this->get_font_registry();
+        if (!isset($fonts[$font_key])) {
+            return;
+        }
+
+        wp_enqueue_style(
+            'ap-font-' . $font_key,
+            $fonts[$font_key]['cdn'],
+            array(),
+            null
+        );
     }
 
     /**
@@ -110,33 +144,11 @@ class Admin_Styles {
 
         $css_parts = array();
 
-        $web_fonts = array(
-            'OPPOSans' => array(
-                'font-family' => "'OPPO Sans', sans-serif",
-                'src' => 'https://www.oppo.com/content/dam/oppo/common/fonts/font2/new-font/OPPOSansOS2-5000-Regular.woff2',
-            ),
-            'MiSans' => array(
-                'font-family' => "'MiSans', sans-serif",
-                'src' => 'https://cdn.jsdelivr.net/npm/misans@4.1.0/lib/Latin/MiSansLatin-Medium.woff2',
-            ),
-        );
-
         if (!empty($font_family)) {
-            if (isset($web_fonts[$font_family])) {
-                $wf = $web_fonts[$font_family];
-                $css_parts[] = '@font-face {
-                    font-family: ' . $wf['font-family'] . ';
-                    src: url(' . esc_url($wf['src']) . ') format("woff2");
-                    font-weight: normal;
-                    font-style: normal;
-                    font-display: swap;
-                }';
+            $fonts = $this->get_font_registry();
+            if (isset($fonts[$font_family])) {
                 $css_parts[] = 'body, #wpadminbar, #adminmenu, .wp-submenu, .wrap, #wpbody-content {
-                    font-family: ' . $wf['font-family'] . ' !important;
-                }';
-            } else {
-                $css_parts[] = 'body, #wpadminbar, #adminmenu, .wp-submenu, .wrap, #wpbody-content {
-                    font-family: ' . $font_family . ', sans-serif !important;
+                    font-family: ' . $fonts[$font_family]['css'] . ' !important;
                 }';
             }
         }

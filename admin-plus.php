@@ -107,7 +107,7 @@ class Admin_Plus {
             'remove_admin_bar_logo' => 0,    // 是否移除顶部工具栏WordPress Logo
             'login_custom_css' => '',        // 登录页自定义CSS代码
             'admin_custom_css' => '',        // 后台自定义CSS代码
-            'admin_font_family' => '',       // 后台自定义字体
+            'admin_font_family' => '',       // 后台字体方案键名（空=系统默认）
             'custom_primary' => '#3858e9',   // 自定义颜色 - 主色调
             'custom_menu_bg' => '#1e1e1e',   // 自定义颜色 - 菜单背景
             'custom_highlight' => '#7b90ff', // 自定义颜色 - 高亮色

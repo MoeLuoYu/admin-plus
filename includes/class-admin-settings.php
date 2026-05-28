@@ -252,14 +252,9 @@ class Admin_Settings {
      */
     private function sanitize_font_family($font_family) {
         $allowed = array(
-            '',                                              // 系统默认
-            'system-ui',                                     // 系统UI字体
-            '-apple-system,BlinkMacSystemFont',              // 苹果字体栈
-            "'Segoe UI',Roboto,Oxygen-Sans",                 // Windows/Android字体栈
-            "'Noto Sans SC','Microsoft YaHei'",               // 中文字体栈
-            "'Inter',sans-serif",                            // Inter字体
-            'OPPOSans',                                      // OPPO Sans
-            'MiSans',                                        // MiSans
+            '',
+            'harmonyos-sans',
+            'noto-sans-sc',
         );
         if (in_array($font_family, $allowed, true)) {
             return $font_family;
@@ -519,13 +514,8 @@ class Admin_Settings {
                 <td>
                     <select id="admin_font_family" name="ap_settings[admin_font_family]">
                         <option value="" <?php selected($font_family, ''); ?>><?php _e('系统默认', 'admin-plus'); ?></option>
-                        <option value="system-ui" <?php selected($font_family, 'system-ui'); ?>><?php _e('系统UI字体', 'admin-plus'); ?></option>
-                        <option value="-apple-system,BlinkMacSystemFont" <?php selected($font_family, '-apple-system,BlinkMacSystemFont'); ?>><?php _e('苹果字体', 'admin-plus'); ?></option>
-                        <option value="'Segoe UI',Roboto,Oxygen-Sans" <?php selected($font_family, "'Segoe UI',Roboto,Oxygen-Sans"); ?>><?php _e('Segoe UI', 'admin-plus'); ?></option>
-                        <option value="'Noto Sans SC','Microsoft YaHei'" <?php selected($font_family, "'Noto Sans SC','Microsoft YaHei'"); ?>><?php _e('中文字体', 'admin-plus'); ?></option>
-                        <option value="'Inter',sans-serif" <?php selected($font_family, "'Inter',sans-serif"); ?>><?php _e('Inter', 'admin-plus'); ?></option>
-                        <option value="OPPOSans" <?php selected($font_family, 'OPPOSans'); ?>>OPPO Sans</option>
-                        <option value="MiSans" <?php selected($font_family, 'MiSans'); ?>>MiSans</option>
+                        <option value="harmonyos-sans" <?php selected($font_family, 'harmonyos-sans'); ?>>HarmonyOS Sans</option>
+                        <option value="noto-sans-sc" <?php selected($font_family, 'noto-sans-sc'); ?>>Noto Sans SC</option>
                     </select>
                 </td>
             </tr>
