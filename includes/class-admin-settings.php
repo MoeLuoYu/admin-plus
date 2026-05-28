@@ -258,6 +258,8 @@ class Admin_Settings {
             "'Segoe UI',Roboto,Oxygen-Sans",                 // Windows/Android字体栈
             "'Noto Sans SC','Microsoft YaHei'",               // 中文字体栈
             "'Inter',sans-serif",                            // Inter字体
+            'OPPOSans',                                      // OPPO Sans
+            'MiSans',                                        // MiSans
         );
         if (in_array($font_family, $allowed, true)) {
             return $font_family;
@@ -522,6 +524,8 @@ class Admin_Settings {
                         <option value="'Segoe UI',Roboto,Oxygen-Sans" <?php selected($font_family, "'Segoe UI',Roboto,Oxygen-Sans"); ?>><?php _e('Segoe UI', 'admin-plus'); ?></option>
                         <option value="'Noto Sans SC','Microsoft YaHei'" <?php selected($font_family, "'Noto Sans SC','Microsoft YaHei'"); ?>><?php _e('中文字体', 'admin-plus'); ?></option>
                         <option value="'Inter',sans-serif" <?php selected($font_family, "'Inter',sans-serif"); ?>><?php _e('Inter', 'admin-plus'); ?></option>
+                        <option value="OPPOSans" <?php selected($font_family, 'OPPOSans'); ?>>OPPO Sans</option>
+                        <option value="MiSans" <?php selected($font_family, 'MiSans'); ?>>MiSans</option>
                     </select>
                 </td>
             </tr>

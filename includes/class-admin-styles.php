@@ -110,11 +110,35 @@ class Admin_Styles {
 
         $css_parts = array();
 
-        // 自定义字体样式
+        $web_fonts = array(
+            'OPPOSans' => array(
+                'font-family' => "'OPPO Sans', sans-serif",
+                'src' => 'https://www.oppo.com/content/dam/oppo/common/fonts/font2/new-font/OPPOSansOS2-5000-Regular.woff2',
+            ),
+            'MiSans' => array(
+                'font-family' => "'MiSans', sans-serif",
+                'src' => 'https://cdn.jsdelivr.net/npm/misans@4.1.0/lib/Latin/MiSansLatin-Medium.woff2',
+            ),
+        );
+
         if (!empty($font_family)) {
-            $css_parts[] = 'body, #wpadminbar, #adminmenu, .wp-submenu, .wrap, #wpbody-content {
-                font-family: ' . $font_family . ', sans-serif !important;
-            }';
+            if (isset($web_fonts[$font_family])) {
+                $wf = $web_fonts[$font_family];
+                $css_parts[] = '@font-face {
+                    font-family: ' . $wf['font-family'] . ';
+                    src: url(' . esc_url($wf['src']) . ') format("woff2");
+                    font-weight: normal;
+                    font-style: normal;
+                    font-display: swap;
+                }';
+                $css_parts[] = 'body, #wpadminbar, #adminmenu, .wp-submenu, .wrap, #wpbody-content {
+                    font-family: ' . $wf['font-family'] . ' !important;
+                }';
+            } else {
+                $css_parts[] = 'body, #wpadminbar, #adminmenu, .wp-submenu, .wrap, #wpbody-content {
+                    font-family: ' . $font_family . ', sans-serif !important;
+                }';
+            }
         }
 
         // Discuz风格布局CSS
@@ -252,6 +276,17 @@ class Admin_Styles {
                 object-fit: contain;
             }
             
+            .ap-top-menu-item .ap-menu-icon-svg {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-right: 6px;
+                vertical-align: middle;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            
             /* Scroll indicators */
             .ap-top-menu-scroll-left,
             .ap-top-menu-scroll-right {
@@ -328,6 +363,17 @@ class Admin_Styles {
                 margin-right: 6px;
                 vertical-align: middle;
                 object-fit: contain;
+            }
+            
+            .ap-sidebar-item .ap-menu-icon-svg {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-right: 6px;
+                vertical-align: middle;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
             }
             
             /* Menu count bubble - WordPress style */
@@ -593,11 +639,14 @@ class Admin_Styles {
                 $current_menu_id = $menu_slug;
             }
             
-            // 解析菜单图标类型（图片URL / Dashicon / 无图标）
+            // 解析菜单图标类型（图片URL / Data URI / Dashicon / 无图标）
             $icon_type = 'none';
             $icon_value = '';
             if (!empty($item[6])) {
-                if (preg_match('/^(https?:|\/\/|data:)/i', $item[6]) || preg_match('/\.(png|jpg|jpeg|gif|svg|ico|webp)(\?|$)/i', $item[6])) {
+                if (strpos($item[6], 'data:image/') === 0) {
+                    $icon_type = 'data-uri';
+                    $icon_value = $item[6];
+                } elseif (preg_match('/^(https?:|\/\/)/i', $item[6]) || preg_match('/\.(png|jpg|jpeg|gif|svg|ico|webp)(\?|$)/i', $item[6])) {
                     $icon_type = 'image';
                     $icon_value = $item[6];
                 } elseif ($item[6] !== 'none' && $item[6] !== 'div') {
@@ -817,13 +866,26 @@ class Admin_Styles {
      * @return string 图标的HTML代码，无图标时返回空字符串
      */
     private function render_icon_html($icon_type, $icon_value) {
+        if ($icon_type === 'data-uri' && !empty($icon_value)) {
+            $safe_uri = $this->sanitize_data_uri($icon_value);
+            if (!empty($safe_uri)) {
+                return '<span class="ap-menu-icon ap-menu-icon-svg" style="background-image: url(' . esc_attr($safe_uri) . ');"></span> ';
+            }
+            return '';
+        }
         if ($icon_type === 'image' && !empty($icon_value)) {
-            // 处理协议相对URL（如 //example.com/icon.png）
             $url = (strpos($icon_value, '//') === 0) ? set_url_scheme($icon_value) : $icon_value;
             return '<img src="' . esc_url($url) . '" alt="" class="ap-menu-icon-img"> ';
         }
         if ($icon_type === 'dashicon' && !empty($icon_value)) {
             return '<span class="dashicons ' . esc_attr($icon_value) . '"></span> ';
+        }
+        return '';
+    }
+
+    private function sanitize_data_uri($uri) {
+        if (preg_match('/^data:image\/[a-z0-9+.-]+;base64,[a-zA-Z0-9+\/=]+$/', $uri)) {
+            return $uri;
         }
         return '';
     }
