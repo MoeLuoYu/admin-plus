@@ -1,0 +1,299 @@
+/* ============================================
+   Admin Plus - 后台管理样式
+   ============================================ */
+
+/* --- 设置页面样式 --- */
+.ap-settings-wrap {
+    max-width: 960px;
+    margin: 20px 0;
+}
+
+.ap-settings-wrap h1 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.ap-settings-form {
+    background: #fff;
+    padding: 20px 30px;
+    border: 1px solid #e2e4e7;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    margin-top: 0;
+}
+
+.ap-settings-form .form-table th {
+    width: 200px;
+    padding: 20px 10px 20px 0;
+}
+
+.ap-settings-form .form-table td {
+    padding: 15px 10px;
+}
+
+.ap-settings-form .description {
+    margin-top: 6px;
+    color: #666;
+    font-style: normal;
+}
+
+/* Image uploader */
+.ap-image-uploader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.ap-image-uploader .regular-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.ap-preview img {
+    border-radius: 6px;
+    border: 1px solid #e2e4e7;
+    padding: 4px;
+    background: #f8f9fa;
+}
+
+/* Color picker */
+.ap-color-picker {
+    width: 80px !important;
+}
+
+/* Color preview in settings */
+.ap-color-preview {
+    background: #f8f9fa;
+    border: 1px solid #e2e4e7;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0 0;
+}
+
+.ap-color-preview h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.ap-color-swatch-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.ap-color-swatch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: 1px solid #e2e4e7;
+}
+
+.ap-swatch-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px #e2e4e7;
+    flex-shrink: 0;
+}
+
+.ap-swatch-label {
+    font-weight: 600;
+    font-size: 13px;
+    color: #444;
+}
+
+.ap-swatch-value {
+    font-size: 12px;
+    color: #999;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+/* Custom CSS examples */
+.ap-custom-css-examples {
+    background: #f8f9fa;
+    border: 1px solid #e2e4e7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.ap-custom-css-examples h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.ap-code-example {
+    background: #1d2327;
+    color: #c3c4c7;
+    padding: 16px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Submit button spacing */
+.ap-settings-form .submit {
+    padding-top: 20px;
+    margin-top: 10px;
+    border-top: 1px solid #e2e4e7;
+}
+
+/* --- 后台通用美化 --- */
+
+/* 后台wrap容器美化 */
+#wpbody-content .wrap {
+    background: transparent;
+}
+
+/* 页面标题 */
+.wrap h1,
+.wrap h2:not(.nav-tab-wrapper) {
+    font-weight: 600;
+}
+
+/* 卡片样式改善 */
+.postbox {
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e4e7;
+    transition: box-shadow 0.2s ease;
+}
+
+.postbox:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.postbox .hndle {
+    border-bottom: 1px solid #f0f0f1;
+    font-weight: 600;
+}
+
+/* 表格美化 */
+.widefat {
+    border-radius: 8px;
+    border: 1px solid #e2e4e7;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.widefat thead th {
+    background: #f8f9fa;
+    font-weight: 600;
+}
+
+.widefat tfoot th {
+    background: #f8f9fa;
+}
+
+/* 按钮美化 */
+.wp-core-ui .button {
+    border-radius: 4px;
+    transition: all 0.15s ease;
+}
+
+.wp-core-ui .button-primary {
+    border-radius: 4px;
+}
+
+/* 表单输入框 */
+.wp-core-ui input[type="text"],
+.wp-core-ui input[type="password"],
+.wp-core-ui input[type="email"],
+.wp-core-ui input[type="number"],
+.wp-core-ui input[type="search"],
+.wp-core-ui textarea {
+    border-radius: 4px;
+    border-color: #dcdcde;
+}
+
+.wp-core-ui input[type="text"]:focus,
+.wp-core-ui input[type="password"]:focus,
+.wp-core-ui input[type="email"]:focus,
+.wp-core-ui input[type="number"]:focus,
+.wp-core-ui input[type="search"]:focus,
+.wp-core-ui textarea:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+/* 选择框 */
+.wp-core-ui select {
+    border-radius: 4px;
+    border-color: #dcdcde;
+}
+
+/* 通知消息 */
+.notice {
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.notice-success {
+    border-left-color: #46b450;
+}
+
+.notice-warning {
+    border-left-color: #ffb900;
+}
+
+.notice-error {
+    border-left-color: #dc3232;
+}
+
+.notice-info {
+    border-left-color: #00a0d2;
+}
+
+/* 仪表盘小工具 */
+#dashboard-widgets .postbox {
+    border-radius: 8px;
+}
+
+#dashboard-widgets .postbox .inside {
+    padding: 8px 12px 12px;
+}
+
+/* 列表表格的条纹效果 */
+.widefat.striped > tbody > :nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+/* 分页美化 */
+.tablenav .tablenav-pages .pagination-links a {
+    border-radius: 4px;
+    border-color: #dcdcde;
+}
+
+.tablenav .tablenav-pages .pagination-links .current-page {
+    border-radius: 4px;
+}
+
+/* 页面内边距优化 */
+#wpbody-content {
+    padding-bottom: 40px;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 782px) {
+    .ap-settings-form {
+        padding: 15px;
+    }
+
+    .ap-image-uploader .regular-text {
+        min-width: 100%;
+    }
+
+    .ap-settings-form .form-table th {
+        width: auto;
+        padding: 10px 0;
+    }
+}
